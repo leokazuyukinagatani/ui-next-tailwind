@@ -1,4 +1,5 @@
 import { Logo } from './icons/Logo'
+import { NavLink } from './NavLink'
 
 export function Sidebar() {
   return (
@@ -10,12 +11,12 @@ export function Sidebar() {
             Guides
           </strong>
           <div className='text-sm flex flex-col pl-2'>
-            <a className="px-4 py-1.5 border-1 border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Introduction</a>
-            <a className="px-4 py-1.5 border-1 border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Quickstart</a>
-            <a className="px-4 py-1.5 border-1 border-white/5 text-zinc-400 hover:text-white transition-colors" href="">SDKS</a>
-            <a className="px-4 py-1.5 border-1 border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Authentication</a>
-            <a className="px-4 py-1.5 border-1 border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Errors</a>
-            <a className="px-4 py-1.5 border-1 border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Webhooks</a>
+            <NavLink href="/introduction">Introduction</NavLink>
+            <NavLink href="/">Quickstart</NavLink>
+            <NavLink href="/">SDKS</NavLink>
+            <NavLink href="/">Authentication</NavLink>
+            <NavLink href="/">Errors</NavLink>
+            <NavLink href="/">Webhooks</NavLink>
           </div>
         </div>
 
@@ -24,11 +25,11 @@ export function Sidebar() {
             Resources
           </strong>
           <div className='text-sm flex flex-col pl-2'>
-            <a className="px-4 py-1.5 border-1 border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Contacts</a>
-            <a className="px-4 py-1.5 border-1 border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Conversations</a>
-            <a className="px-4 py-1.5 border-1 border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Messages</a>
-            <a className="px-4 py-1.5 border-1 border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Groups</a>
-            <a className="px-4 py-1.5 border-1 border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Attachments</a>
+            <NavLink href="/">Contacts</NavLink>
+            <NavLink href="/">Conversations</NavLink>
+            <NavLink href="/">Messages</NavLink>
+            <NavLink href="/">Groups</NavLink>
+            <NavLink href="/">Attachments</NavLink>
           </div>
         </div>
       </nav>
